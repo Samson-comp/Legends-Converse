@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Legend Converse</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 1. NAVIGATION HEADER -->
+  <header>
+    <nav>
+      <div class="brand">Legend - Converse</div>
+      <ul>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Motivations</a></li>
+        <li><a href="#">Explore Fields</a></li>
+        <li><a href="#">Explore Cultures</a></li>
+      </ul>
+      <div class="user-actions">
+        <a href="profile.html">My Profile</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- 2. MAIN CONTENT AREA -->
+  <main>
+
+    <!-- SECTION A: CREATE A POST / ASK A QUESTION -->
+    <section class="create-post">
+      <h2>Ask the Community</h2>
+      <form id="question-form">
+        <label for="category">Choose Category:</label>
+        <select id="category" name="category">
+          <option value="business">Business</option>
+          <option value="sports">Sports</option>
+          <option value="motivations">Motivations</option>
+          <option value="fields">Explore Fields</option>
+          <option value="tech">Technology</option>
+          <option value="cultures">Explore Cultures</option>
+          <option value="religion">Religion/Faith</option>
+          <option value="agriculture">Agriculture</option>
+          <option value="news">World News</option>
+        </select>
+
+        <br><br>
+
+        <label for="question">Your Question/Thought:</label><br>
+        <textarea id="question-input" name="question" rows="4" placeholder="What is on your mind?"></textarea>
+
+        <br><br>
+
+        <button type="submit">Post Question</button>
+      </form>
+    </section>
+
+    <hr>
+
+    <!-- SECTION B: SKILLED PEOPLE CARDS -->
+    <section class="featured-experts">
+      <h2>Connect with Skilled Members</h2>
+
+      <div class="cards-container">
+
+        <article class="user-card">
+          <h3>Samson Otieno</h3>
+          <p><strong>Field:</strong> Computer Science</p>
+          <p>I'm a graduant in the field of Computer Science. I have skills for web Development, AI testing and Cybersecurity. </p>
+          <button type="button">Ask a Question</button>
+          <button type="button">Start Call</button>
+        </article>
+
+        <article class="user-card">
+          <h3>Sarah Jenkins</h3>
+          <p><strong>Field:</strong> Business & Marketing</p>
+          <p>Specializes in early-stage startup growth and brand building.</p>
+          <button type="button">Ask a Question</button>
+          <button type="button">Start Call</button>
+        </article>
+
+        <article class="user-card">
+          <h3>David Lee</h3>
+          <p><strong>Field:</strong> Sports Coaching</p>
+          <p>Expert in athletic training and performance optimization.</p>
+          <button type="button">Ask a Question</button>
+          <button type="button">Start Call</button>
+        </article>
+
+        <article class="user-card">
+          <h3>George Mario</h3>
+          <p><strong>Field:</strong> Sports & Athletics</p>
+          <p>Professor in Sports and Athletics. I have over 23years of experience.</p>
+          <button type="button">Ask a Question</button>
+          <button type="button">Start Call</button>
+        </article>
+
+      </div>
+    </section>
+
+    <hr>
+
+    <!-- SECTION C: PUBLIC QUESTION FEED -->
+    <section class="qa-feed">
+      <h2>Recent Questions</h2>
+
+      <div id="feed-container">
+        <article class="feed-item">
+          <header>
+            <h4>Asked by: Alex M. | Category: Explore Cultures</h4>
+          </header>
+          <p>"What are some key business etiquette customs I should know before traveling to Japan?"</p>
+          <button type="button">Answer Question</button>
+        </article>
+
+        <article class="feed-item">
+          <header>
+            <h4>Asked by: Sheddy M. | Category: Technology</h4>
+          </header>
+          <p>"What are the building blocks for Artificial Intelligence and how can i cope up with it since we can't avoid it?"</p>
+          <button type="button"> Answer Question</button>
+        </article>
+        
+        <article class="feed-item">
+          <header>
+            <h4>Asked by: Samson O. | Category: Motivations</h4>
+          </header>
+          <p>"How can I stay motivated during challenging times in my career?"</p>
+          <button type="button">Answer Question</button>
+        </article>
+      </div>  
+    </section>
+
+  </main>
+
+  <!-- 3. FOOTER -->
+  <footer>
+    <p>&copy; 2026 Legend - Converse. All rights reserved.</p>
+  </footer>
+<script src="dash.js"></script>
+</body>
+</html>

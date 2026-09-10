@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend's - Converse</title>
+</head>
+<body>
+    <!--for styling purpose-->
+    <style>
+        body {
+           padding: 20px;
+            background: #ffff;
+            box-sizing: border-box;
+        }
+        main  {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 5px 99px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        form {
+            padding: 12px 20px 30px;
+            background-color: #0f172a;
+            align-items: center;
+            text-align: center;
+            justify-content: center;
+            max-width: 80%;
+            width: 450px;
+            height: 500px;
+            border: 1.5px solid #0612f8;
+            box-shadow: 0 0 0.1 rgb(from color r g b);
+            
+            
+        }
+        .container {
+            padding: 2px 20px 20px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .heading {
+            font-size: 28px;
+            font-weight: 700;
+            border-bottom: 1px solid #0911ec;
+        }
+        h3 {
+            color: #0612f8;
+            font-weight: bold;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        svg {
+            background-color: #0612f8;
+            border-radius: 1pc;
+            padding: 3px;
+            margin-bottom: 5px;
+        }
+        label {
+            display: grid;
+            grid: 1fr;
+            font-size: 20px;
+            font-weight: 500;
+            color: aliceblue;
+            margin-top: 14px;
+            margin-bottom: 7px;
+            
+            
+        }
+        input {
+            margin-bottom: 8px;
+            padding: 10px 34px 15px;
+            border-radius: 10px;
+            border: 2px solid rgb(4, 20, 247);
+            font-size: 18px;
+        }
+        input:hover {
+            border: 2px solid #02f16e;
+
+        }
+        .remind {
+            font-size: 20px;
+            color: #eee;
+            display: flex;
+            gap: 20px;
+            padding: 8px 10px 10px;
+
+        }
+        .checkbox {
+            margin-left: 2px;
+        }
+        .forget {
+            color: aliceblue;
+            background: #000;
+            padding: 8px 8px 13px;
+            font-size: 16px;
+        }
+        .forget:hover {
+            background-color: #000;
+            transform: translateY(4px);
+        }
+        .forget a{
+            color: aliceblue;
+            font-family: sans-serif;
+            text-decoration: none;
+        }
+        .forget:hover {
+            text-decoration: underline;
+        }
+        .action {
+            display: flex;
+            margin-top: 17px;
+            
+        }
+        .action a{
+            margin-left: 0px;
+            padding: 5px;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 600;
+            cursor: pointer;
+            background-color: linear;
+            background: #1a23da;
+            color: #eee;
+
+        }l
+        .action a:hover{
+            background: #1a23da;
+            color: #eee;
+        }
+        .action a:hover {
+            background: #1a23da;
+            color: #eee;
+            border: 1px solid #06e7e3;
+        }
+        .btn-submit {
+            margin-left: 65%;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            background: linear-gradient(rgb(27, 33, 148),rgb(2, 5, 174),rgb(14, 4, 58));
+            color: #eee;
+        }
+        .btn-submit:hover {
+            border: 1px solid #06e7e3;
+        }
+    </style>
+    <main>
+        <form action="login" id="login-form" method="POST">
+            <div class="container">
+           
+                <div class="heading">
+                     <h3>Login to Your Account</h3>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000">
+                        <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm146.5-204.5Q340-521 340-580t40.5-99.5Q421-720 480-720t99.5 40.5Q620-639 620-580t-40.5 99.5Q539-440 480-440t-99.5-40.5ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm100-95.5q47-15.5 86-44.5-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160q53 0 100-15.5ZM523-537q17-17 17-43t-17-43q-17-17-43-17t-43 17q-17 17-17 43t17 43q17 17 43 17t43-17Zm-43-43Zm0 360Z"/>
+                    </svg>
+                </div>
+            
+                <label for="login-email">Username / Email</label>
+            
+                <input  type="text" id="login-email" placeholder="Samson" required>
+            
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="••••••••••••••••" required>
+            
+                <div class="remind">
+                    <input type="checkbox" id="remember-me" class="checkbox">
+                    Remember Me!
+                </div>
+            
+                <div class="forget">
+                    <a href="#">Forget Password! </a>
+                </div>
+                <div class="action">
+                    <a href="signup.html" class="btn-back" id="back">Signup</a>
+                    <button class="btn-submit" id="submit" type="submit">Submit </button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script src="auth.js"></script>
+</body>
+</html>

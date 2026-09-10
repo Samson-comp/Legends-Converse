@@ -1,0 +1,156 @@
+/* 1. GLOBAL RESETS & VARIABLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f1f5f9;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #cbd5e1;
+  margin: 2rem 0;
+}
+
+/* 2. NAVIGATION (FLEXBOX) */
+header {
+  background-color: #0f172a;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #38bdf8;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+nav ul li a, .user-actions a {
+  color: #f8fafc;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav ul li a:hover, .user-actions a:hover {
+  color: #38bdf8;
+}
+
+/* 3. MAIN LAYOUT & SECTIONS */
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+/* 4. FORM STYLING */
+.create-post {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.create-post select, 
+.create-post textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* 5. EXPERTS SECTION (GRID) */
+.featured-experts {
+  margin-top: 2rem;
+}
+
+/* We group user-cards into a dynamic multi-column grid */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.user-card {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 4px solid #0284c7;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.user-card h3 {
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+/* 6. BUTTONS */
+button {
+  padding: 0.5rem 1rem;
+  margin-top: 0.75rem;
+  margin-right: 0.5rem;
+  background-color: #0284c7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #0369a1;
+}
+
+/* 7. FEED STYLING */
+.feed-item {
+  background-color: #ffffff;
+  padding: 1.25rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border-left: 4px solid #10b981 ;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.feed-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.feed-item header h4 {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+footer {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-top: 1px solid #000;
+}
