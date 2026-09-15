@@ -4,7 +4,7 @@ const currentUser = JSON.parse(localStorage.getItem('currentUser'));
 // 2. AUTHENTICATION GUARD (If no user is logged in, redirect them to login page)
 if (!currentUser) {
   alert('You must log in to access the Legend - Converse dashboard!');
-  window.location.href = 'login.html';
+  window.location.href = 'index.html';
 } else {
   // 3. FIND THE USER-ACTIONS CONTAINER IN THE NAVBAR
   const userActionsDiv = document.querySelector('.user-actions');
