@@ -37,7 +37,7 @@ if (signupForm) {
 
     console.log('Successfully saved user:', newUser);
     alert('Account created successfully! Redirecting to login page...');
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
   });
 }
 
